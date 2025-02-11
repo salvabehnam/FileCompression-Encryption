@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="263.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Button fx:id="btn_01" layoutX="100.0" layoutY="78.0" mnemonicParsing="false" onAction="#slctFileEncd" prefHeight="25.0" prefWidth="82.0" text="Compress" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="50.0" layoutY="45.0" text="Choose a '.txt' File to Compress" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font name="Tahoma" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_02" layoutX="413.0" layoutY="79.0" mnemonicParsing="false" onAction="#slctFileDcd" text="Decompress" AnchorPane.rightAnchor="106.0">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="357.0" layoutY="45.0" text="Choose a '.8z' File to Decompress" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="Tahoma" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_01" layoutX="347.0" layoutY="134.0" prefHeight="18.0" prefWidth="144.0" text="Original Size">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_33" layoutX="347.0" layoutY="224.0" prefHeight="18.0" prefWidth="214.0" text="10.0 %">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_11" layoutX="347.0" layoutY="152.0" prefHeight="18.0" prefWidth="214.0" text="151654561 bits">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_22" layoutX="347.0" layoutY="188.0" prefHeight="18.0" prefWidth="214.0" text="15153654 bits">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_02" layoutX="347.0" layoutY="170.0" prefHeight="18.0" prefWidth="106.0" text="Compressed Size">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_03" layoutX="347.0" layoutY="206.0" prefHeight="18.0" prefWidth="112.0" text="Compression Rate">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_fld" layoutX="69.0" layoutY="158.0" promptText="Password">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lbl_04" layoutX="69.0" layoutY="188.0" prefHeight="18.0" prefWidth="172.0" text="Invalid Password" textFill="RED">
+         <font>
+            <Font name="Tahoma" size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
